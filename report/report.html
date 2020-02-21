@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="form-wrapper">
+    <h1>Rapportera röster</h1>
+
+    <form>
+      Valdistrikt
+      <select id="distrikt" name="dist">
+        <option value="nord">Nord</option>
+        <option value="syd">Syd</option>
+      </select>
+      Allmänna partiet
+      <input type="number" name="al" value="0" />
+      Speciella partiet
+      <input type="number" name="sp" value="0" />
+      Särskilda partiet
+      <input type="number" name="sa" value="0" />
+      Övriga
+      <input type="number" name="ov" value="0" />
+      Ogiltiga
+      <input type="number" name="og" value="0" /><br />
+      <button type="submit" name="send">
+        Send
+      </button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2.2.0/dist/socket.io.js"></script>
+  <script src="./report.js"></script>
+</body>
+
+</html>
